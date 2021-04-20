@@ -63,7 +63,7 @@ namespace Timesheet
             this.labelTask.Size = new System.Drawing.Size(29, 15);
             this.labelTask.TabIndex = 2;
             this.labelTask.Text = "Task";
-            this.labelTask.Click += new System.EventHandler(this.label1_Click_1);
+            
             // 
             // labelDescription
             // 
