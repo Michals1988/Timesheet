@@ -22,6 +22,39 @@ namespace Timesheet
 
         }
 
+        private void dateTimePickerFrom_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime dtFrom = dateTimePickerFrom.Value;
+            DateTime dtTo = dateTimePickerTo.Value;
+            labelTotalHours.Text = totalHoursCount(dtFrom, dtTo);
+        }
 
+        private void dateTimePickerTo_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime dtFrom = dateTimePickerFrom.Value;
+            DateTime dtTo = dateTimePickerTo.Value;
+            labelTotalHours.Text = totalHoursCount(dtFrom, dtTo);
+        }
+
+
+        private void buttonSubmit_Click(object sender, EventArgs e)
+        {
+            DateTime dtFrom = dateTimePickerFrom.Value;
+            DateTime dtTo = dateTimePickerTo.Value;
+
+                     
+            MessageBox.Show(totalHoursCount(dtFrom, dtTo) + " hours sumbitted!");
+
+
+
+        }
+
+        
+        public string totalHoursCount(DateTime dt1, DateTime dt2)
+        {
+            TimeSpan tspan = dt2 - dt1;
+            String timeDiff = tspan.Hours.ToString();
+            return timeDiff;
+        }
     }
 }
