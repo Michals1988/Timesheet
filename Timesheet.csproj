@@ -6,4 +6,18 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="timesheet-3225e-firebase-adminsdk-zbp9u-101586edf3.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="timesheet-3225e-firebase-adminsdk-zbp9u-101586edf3.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Cloud.Firestore" Version="2.3.1" />
+  </ItemGroup>
+
 </Project>
