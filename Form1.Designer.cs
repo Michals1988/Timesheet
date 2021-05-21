@@ -48,13 +48,15 @@ namespace Timesheet
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // dateTimePickerTo
             // 
             this.dateTimePickerTo.CustomFormat = "dd-MM-yyyy   HH:mm";
             this.dateTimePickerTo.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePickerTo.Location = new System.Drawing.Point(467, 305);
+            this.dateTimePickerTo.Location = new System.Drawing.Point(469, 335);
             this.dateTimePickerTo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dateTimePickerTo.Name = "dateTimePickerTo";
             this.dateTimePickerTo.ShowUpDown = true;
@@ -68,17 +70,16 @@ namespace Timesheet
             this.labelAppName.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.labelAppName.Font = new System.Drawing.Font("ISOCPEUR", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.labelAppName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelAppName.Location = new System.Drawing.Point(262, 9);
+            this.labelAppName.Location = new System.Drawing.Point(260, 9);
             this.labelAppName.Name = "labelAppName";
             this.labelAppName.Size = new System.Drawing.Size(230, 41);
             this.labelAppName.TabIndex = 0;
             this.labelAppName.Text = "TimeSheet App";
             this.labelAppName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelAppName.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(130, 139);
+            this.textBox1.Location = new System.Drawing.Point(132, 169);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(565, 27);
@@ -87,7 +88,7 @@ namespace Timesheet
             // labelTask
             // 
             this.labelTask.AutoSize = true;
-            this.labelTask.Location = new System.Drawing.Point(45, 143);
+            this.labelTask.Location = new System.Drawing.Point(47, 173);
             this.labelTask.Name = "labelTask";
             this.labelTask.Size = new System.Drawing.Size(39, 20);
             this.labelTask.TabIndex = 2;
@@ -96,7 +97,7 @@ namespace Timesheet
             // labelDescription
             // 
             this.labelDescription.AutoSize = true;
-            this.labelDescription.Location = new System.Drawing.Point(45, 196);
+            this.labelDescription.Location = new System.Drawing.Point(47, 226);
             this.labelDescription.Name = "labelDescription";
             this.labelDescription.Size = new System.Drawing.Size(88, 20);
             this.labelDescription.TabIndex = 3;
@@ -104,7 +105,7 @@ namespace Timesheet
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(130, 192);
+            this.textBox2.Location = new System.Drawing.Point(132, 222);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(565, 27);
@@ -113,7 +114,7 @@ namespace Timesheet
             // labelTimeFrom
             // 
             this.labelTimeFrom.AutoSize = true;
-            this.labelTimeFrom.Location = new System.Drawing.Point(45, 313);
+            this.labelTimeFrom.Location = new System.Drawing.Point(45, 340);
             this.labelTimeFrom.Name = "labelTimeFrom";
             this.labelTimeFrom.Size = new System.Drawing.Size(81, 20);
             this.labelTimeFrom.TabIndex = 5;
@@ -123,7 +124,7 @@ namespace Timesheet
             // 
             this.dateTimePickerFrom.CustomFormat = "dd-MM-yyyy   HH:mm";
             this.dateTimePickerFrom.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePickerFrom.Location = new System.Drawing.Point(130, 305);
+            this.dateTimePickerFrom.Location = new System.Drawing.Point(132, 335);
             this.dateTimePickerFrom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dateTimePickerFrom.Name = "dateTimePickerFrom";
             this.dateTimePickerFrom.ShowUpDown = true;
@@ -134,7 +135,7 @@ namespace Timesheet
             // labelTimeTo
             // 
             this.labelTimeTo.AutoSize = true;
-            this.labelTimeTo.Location = new System.Drawing.Point(395, 313);
+            this.labelTimeTo.Location = new System.Drawing.Point(400, 340);
             this.labelTimeTo.Name = "labelTimeTo";
             this.labelTimeTo.Size = new System.Drawing.Size(63, 20);
             this.labelTimeTo.TabIndex = 7;
@@ -143,24 +144,23 @@ namespace Timesheet
             // labelTotal
             // 
             this.labelTotal.AutoSize = true;
-            this.labelTotal.Location = new System.Drawing.Point(45, 359);
+            this.labelTotal.Location = new System.Drawing.Point(47, 389);
             this.labelTotal.Name = "labelTotal";
-            this.labelTotal.Size = new System.Drawing.Size(45, 20);
+            this.labelTotal.Size = new System.Drawing.Size(115, 20);
             this.labelTotal.TabIndex = 9;
-            this.labelTotal.Text = "Total:";
+            this.labelTotal.Text = "Total work time:";
             // 
             // labelTotalHours
             // 
             this.labelTotalHours.AutoSize = true;
-            this.labelTotalHours.Location = new System.Drawing.Point(130, 359);
+            this.labelTotalHours.Location = new System.Drawing.Point(180, 389);
             this.labelTotalHours.Name = "labelTotalHours";
-            this.labelTotalHours.Size = new System.Drawing.Size(50, 20);
+            this.labelTotalHours.Size = new System.Drawing.Size(0, 20);
             this.labelTotalHours.TabIndex = 10;
-            this.labelTotalHours.Text = "label2";
             // 
             // buttonSubmit
             // 
-            this.buttonSubmit.Location = new System.Drawing.Point(130, 419);
+            this.buttonSubmit.Location = new System.Drawing.Point(132, 426);
             this.buttonSubmit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(86, 31);
@@ -171,18 +171,19 @@ namespace Timesheet
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(467, 419);
+            this.buttonCancel.Location = new System.Drawing.Point(469, 426);
             this.buttonCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(86, 31);
             this.buttonCancel.TabIndex = 12;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // labelDate
             // 
             this.labelDate.AutoSize = true;
-            this.labelDate.Location = new System.Drawing.Point(45, 252);
+            this.labelDate.Location = new System.Drawing.Point(47, 282);
             this.labelDate.Name = "labelDate";
             this.labelDate.Size = new System.Drawing.Size(44, 20);
             this.labelDate.TabIndex = 13;
@@ -191,7 +192,7 @@ namespace Timesheet
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(130, 244);
+            this.dateTimePicker1.Location = new System.Drawing.Point(132, 274);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(228, 27);
@@ -200,23 +201,23 @@ namespace Timesheet
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(190, 95);
+            this.textBox3.Location = new System.Drawing.Point(132, 63);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(167, 27);
+            this.textBox3.Size = new System.Drawing.Size(228, 27);
             this.textBox3.TabIndex = 15;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(524, 92);
+            this.textBox4.Location = new System.Drawing.Point(497, 63);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(171, 27);
+            this.textBox4.Size = new System.Drawing.Size(200, 27);
             this.textBox4.TabIndex = 16;
             this.textBox4.UseSystemPasswordChar = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(130, 95);
+            this.label1.Location = new System.Drawing.Point(72, 66);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 20);
             this.label1.TabIndex = 17;
@@ -225,17 +226,38 @@ namespace Timesheet
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(428, 95);
+            this.label2.Location = new System.Drawing.Point(400, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 20);
             this.label2.TabIndex = 18;
             this.label2.Text = "PASSWORD:";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(260, 121);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 29);
+            this.button2.TabIndex = 20;
+            this.button2.Text = "Zaloguj";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.Info;
+            this.label3.Location = new System.Drawing.Point(400, 125);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 20);
+            this.label3.TabIndex = 21;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(757, 551);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox4);
@@ -285,6 +307,8 @@ namespace Timesheet
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
